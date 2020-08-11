@@ -10,6 +10,10 @@ sudo passwd
 to install docker and git on a Centos 8 machine.
 #### [setupMachine.sh](setupMachine.sh)
 
+## Run the setup 
+to install netbox.
+#### [setupNetbox.sh](setupNetbox.sh)
+
 #### Running portainer to see your instances
 if you are using gcp then open port 9000 to the firewall as shown above
 ```
