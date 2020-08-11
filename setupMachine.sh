@@ -17,6 +17,6 @@ sudo curl -L https://github.com/docker/compose/releases/download/1.26.2/docker-c
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose -version
 
-#export DOCKER_HOST=127.0.0.1:2375
 sudo usermod -aG docker $USER
+sudo systemctl enable --now docker
 # log out and back in at this point
