@@ -6,8 +6,12 @@ to install docker and git on a Centos 8 machine.
 #### [setupMachine.sh](setupMachine.sh)
 
 ## Run the Netbox setup 
-to install netbox.
+to install Netbox.
 #### [setupNetbox.sh](setupNetbox.sh)
+
+## Run the SnipeIT setup 
+to install SnipeIT.
+#### [setupSnipeIT.sh](setupSnipeIT.sh)
 
 #### Running portainer to see your instances
 if you are using gcp then open port 9000 to the firewall as shown above
