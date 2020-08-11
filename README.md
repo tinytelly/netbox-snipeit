@@ -6,6 +6,10 @@ This is how to run up a [snipeit](https://snipeitapp.com/) and [netbox](https://
 sudo passwd
 ```
 
+## Run the setup 
+to install docker and git. 
+#### [setupMachine.sh](setupMachine.sh)
+
 #### Running portainer to see your instances
 if you are using gcp then open port 9000 to the firewall as shown above
 ```
