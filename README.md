@@ -1,4 +1,4 @@
-# Net Stack
+# Netbox and SnipeIT Stack
 This is how to run up a [snipeit](https://snipeitapp.com/) and [netbox](https://github.com/netbox-community/netbox-docker) stack in docker.
 
 ### set the new root password first
@@ -7,7 +7,7 @@ sudo passwd
 ```
 
 ## Run the setup 
-to install docker and git. 
+to install docker and git on a Centos 8 machine.
 #### [setupMachine.sh](setupMachine.sh)
 
 #### Running portainer to see your instances

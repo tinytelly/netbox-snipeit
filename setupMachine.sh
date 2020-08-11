@@ -1,24 +1,18 @@
 #!/bin/bash
 
-yum update -y
-yum install git -y
+sudo yum update -y
+sudo yum install git -y
+git --version
+
 
 # Install docker
-yum install -y yum-utils \
-  device-mapper-persistent-data \
-  lvm2
-
-yum-config-manager \
-    --add-repo \
-    https://download.docker.com/linux/centos/docker-ce.repo
-
-yum install -y docker-ce docker-ce-cli containerd.io  
-
-systemctl start docker
+sudo dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
+sudo dnf list docker-ce --showduplicates | sort -r
+sudo dnf install docker-ce --nobest
 
 docker --version
 
 # Install docker-compose
-curl -L https://github.com/docker/compose/releases/download/1.26.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
-chmod +x /usr/local/bin/docker-compose
+sudo curl -L https://github.com/docker/compose/releases/download/1.26.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 docker-compose -version
