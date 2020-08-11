@@ -8,7 +8,7 @@ git --version
 # Install docker
 sudo dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
 sudo dnf list docker-ce --showduplicates | sort -r
-sudo dnf install docker-ce --nobest
+sudo dnf -y install docker-ce --nobest
 sudo systemctl start docker
 docker --version
 
