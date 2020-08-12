@@ -5,6 +5,11 @@
 git clone https://github.com/tinytelly/netbox-snipeit.git
 cd netbox-snipeit/
 
-docker pull snipe/snipe-it
+docker-compose pull
+docker-compose up
 
-docker run --name snipe-mysql --env-file=.env --mount source=snipesql-vol,target=/var/lib/mysql -d -P mysql:5.6
+# Generate the KEY
+docker ps -a # Get the container name
+docker exec -it snipe-it-container-name sh
+
+php artisan key:generate
